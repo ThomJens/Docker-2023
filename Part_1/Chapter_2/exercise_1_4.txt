@@ -1,0 +1,9 @@
+terminaali 1: docker run -it --name secret ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+terminaali 2:
+		winpty docker exec -it secret bash
+			apt-get update
+			apt-get -y install curl
+			curl helsinki.fi
+
+terminaali 1: helsinki.fi

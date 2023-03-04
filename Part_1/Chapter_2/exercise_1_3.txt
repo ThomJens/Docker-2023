@@ -1,0 +1,7 @@
+docker run -it -d --name secret devopsdockeruh/simple-web-service:ubuntu
+
+winpty docker exec -it secret bash
+
+	tail -f ./text.log
+
+	You can find the source code here: https://github.com/docker-hy
